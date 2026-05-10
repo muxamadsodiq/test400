@@ -1,0 +1,124 @@
+{
+  "messages": [
+    {
+      "id": 1,
+      "text": "Javoblaringiz uchun **rahmat**. Vaziуyatingizni táhlil qildim.\nSizdagi belgilar prostatit va undan kelib chiqadigan erektil disfunksiyaning yáqqol kórinishidir. Eng havflisi – vaqtni boy berish.",
+      "timestamp": "23:52",
+      "delay": 2000,
+      "image": null,
+      "qa": null
+    },
+    {
+      "id": 2,
+      "text": "Prostatit 100% holatda tóliq impotensiyaga olib kelishi mumkin. Lekin hozir davolanish imkoni bor.",
+      "timestamp": "23:52",
+      "delay": 2500,
+      "image": null,
+      "qa": null
+    },
+    {
+      "id": 3,
+      "text": "Savol 1: Sizda peshob qilishda muammolar (tez-tez qatnaš) yoki qovuq sohasida oǵriq bormi?",
+      "timestamp": "23:52",
+      "delay": 2000,
+      "image": null,
+      "qa": {
+        "answers": [
+          "Ha",
+          "Yo’q",
+          "Ba’zan"
+        ]
+      }
+    },
+    {
+      "id": 4,
+      "text": "Savol 2: Jinsiy aloqa davrida qiyinchiliklar sezasizmi?",
+      "timestamp": "23:53",
+      "delay": 1800,
+      "image": null,
+      "qa": {
+        "answers": [
+          "Ha",
+          "Yo’q",
+          "Ba’zan"
+        ]
+      }
+    },
+    {
+      "text": "salom qalin [qizil] qizil matn [/qizil]\n[yaxshil] qizil matn [/yashil]",
+      "timestamp": "",
+      "delay": 2000,
+      "image": "/uploads/img_A3gAAzsE.jpg",
+      "qa": {
+        "answers": [
+          "salom"
+        ]
+      },
+      "id": 5
+    }
+  ],
+  "winners": [
+    {
+      "name": "Saidbek X.",
+      "discount": "75%"
+    },
+    {
+      "name": "Umid J.",
+      "discount": "90%"
+    },
+    {
+      "name": "Zurab F.",
+      "discount": "100%"
+    },
+    {
+      "name": "Akukan M.",
+      "discount": "90%"
+    }
+  ],
+  "winners_header": "ULAR ALLAQACHON CHEGIRMANI YUTDI, SIZ HAM YUTUSHINGIZ MUMKIN!",
+  "avatar_url": "/uploads/avatar.jpg",
+  "game": {
+    "type": "baraban",
+    "title": "QAYSI MATRYÖŞKADA\nBEPUL BORLIGINI TOPING",
+    "items": 3,
+    "win_index": 1,
+    "win_value": "100%",
+    "win_sound_url": "",
+    "win_popup_title": "Tabriklaymiz!",
+    "win_popup_text": "Siz chegirma yutib oldingiz [qizil]**100%**[/qizil]\nVa siz dori olishingiz mumkin [qizil]**Bepul!**[/qizil]"
+  },
+  "result": {
+    "image": "",
+    "countdown_seconds": 600,
+    "middle_text": "Shoshiling! Aktsiya tugashiga qolgan vaqt:"
+  },
+  "form": {
+    "title": "Shaklni to’ldiring, qabul qilish\nuchun „UroPro“ bepul*",
+    "subtitle": "Sizdan faqat ismingiz va telefon\nraqamingizni kiritish talab etiladi.",
+    "countdown_seconds": 600,
+    "countdown_show": true,
+    "name_placeholder": "Sizning ismingiz",
+    "phone_prefix": "+998",
+    "button_text": "uni olish",
+    "group_id": ""
+  },
+  "success_modal": {
+    "title": "Tabriklaymiz!",
+    "text": "Ma'lumotlar qabul qilindi",
+    "detail": "**15 daqiqada** mutaxasislar aloqaga chiqadi.\nShu vaqt ichida javob bering,\nbo'lmasam [qizil]aksiyangiz kuyadi![/qizil]",
+    "countdown_minutes": 15
+  },
+  "submission_count": 4,
+  "font_sizes": {
+    "message_text": 16,
+    "timestamp": 11,
+    "winner_text": 14,
+    "winners_header": 18,
+    "game_title": 18,
+    "win_popup_title": 24,
+    "win_popup_text": 16,
+    "form_title": 17,
+    "form_subtitle": 13,
+    "submit_button": 18
+  }
+}

@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="uz">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+  <title>Loading...</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div id="app">
+
+  <!-- CHAT -->
+  <div class="chat-area" id="chatArea">
+    <div id="messages"></div>
+    <div class="typing-row" id="typingRow" style="display:none">
+      <img class="avatar-circle t-avatar" id="typingAvatar" src="" alt="">
+      <div class="typing-bubble">
+        <span></span><span></span><span></span>
+      </div>
+    </div>
+  </div>
+
+  <!-- WINNERS -->
+  <div class="winners-section" id="winnersSection" style="display:none">
+    <div class="winners-header" id="winnersHeader"></div>
+    <div class="winners-list" id="winnersList"></div>
+  </div>
+
+  <!-- GAME -->
+  <div class="game-section" id="gameSection" style="display:none">
+    <div class="game-title-box" id="gameTitleBox"></div>
+    <div class="game-area" id="gameArea"></div>
+  </div>
+
+</div>
+
+<!-- MODAL 1: WIN POPUP -->
+<div class="overlay" id="winOverlay" style="display:none">
+  <div class="win-modal">
+    <button class="close-btn" onclick="closeWinModal()">&#10005;</button>
+    <div class="win-title" id="winTitle"></div>
+    <div class="win-text" id="winText"></div>
+    <button class="green-btn" onclick="openResultModal()">OK</button>
+  </div>
+</div>
+
+<!-- MODAL 2: RESULT + FORM -->
+<div class="overlay" id="resultOverlay" style="display:none">
+  <div class="result-modal">
+    <img class="result-img" id="resultImg" src="" alt="" style="display:none">
+    <div class="result-body">
+      <div class="result-mid-text" id="resultMidText"></div>
+      <div class="result-countdown" id="resultCountdown" style="display:none"></div>
+      <div class="form-title" id="formTitle"></div>
+      <div class="form-subtitle" id="formSubtitle"></div>
+      <div class="form-countdown" id="formCountdown" style="display:none"></div>
+      <form id="orderForm" onsubmit="submitForm(event)">
+        <input type="text" id="nameInput" class="f-input" placeholder="Sizning ismingiz" required>
+        <div class="phone-row">
+          <span class="phone-pre" id="phonePre">+998</span>
+          <input type="tel" id="phoneInput" class="f-input phone-f" placeholder="XX XXX XX XX" required>
+        </div>
+        <button type="submit" class="submit-btn" id="submitBtn">uni olish</button>
+      </form>
+    </div>
+  </div>
+</div>
+
+<!-- MODAL 3: SUCCESS after form submit -->
+<div class="overlay" id="successOverlay" style="display:none">
+  <div class="success-modal">
+    <div class="sm-icon">✓</div>
+    <div class="sm-title" id="smTitle"></div>
+    <div class="sm-text"  id="smText"></div>
+    <div class="sm-detail" id="smDetail"></div>
+    <div class="sm-cd-label">Qolgan vaqt:</div>
+    <div class="sm-countdown" id="smCountdown"></div>
+  </div>
+</div>
+
+<audio id="winAudio" src="" style="display:none"></audio>
+
+<script src="script.js"></script>
+</body>
+</html>
