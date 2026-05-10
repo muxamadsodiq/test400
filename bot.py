@@ -10,6 +10,9 @@ import threading
 import logging
 import requests as req_lib
 from pathlib import Path
+from dotenv import load_dotenv
+
+load_dotenv()
 
 from flask import Flask, request, jsonify, send_from_directory, send_file
 from flask_cors import CORS
@@ -23,8 +26,8 @@ from telegram.ext import (
 )
 
 # ───────── CONFIG ─────────
-BOT_TOKEN = "8723789656:AAHXO5DOB1R3PmcMs5FGp8hfEqT9UTaHdCM"
-ADMIN_ID  = 5724592490
+BOT_TOKEN = os.getenv("BOT_TOKEN", "")
+ADMIN_ID  = int(os.getenv("ADMIN_ID", "0"))
 
 BASE_DIR    = Path(__file__).parent
 CONTENT_FILE = BASE_DIR / "content.json"
