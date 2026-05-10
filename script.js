@@ -136,16 +136,24 @@ function renderMessage(msg, idx) {
   const imageTag = msg.image
     ? `<img class="msg-image" src="${msg.image}" alt="" onerror="this.style.display='none'">`
     : '';
+  const imgPos = msg.image_position || 'bottom';
 
   block.innerHTML = `
     ${avatarTag}
     <div class="msg-right">
       <div class="msg-bubble">
+        ${imgPos === 'top' ? imageTag : ''}
         <div class="msg-text" style="font-size:var(--fs-msg)"></div>
-        ${imageTag}
+        ${imgPos === 'bottom' ? imageTag : ''}
         <div class="msg-time" style="font-size:var(--fs-time)">${getCurrentTime()}</div>
       </div>
     </div>`;
+
+  // Top bo'lsa rasmni vaqtincha yashir
+  if (imgPos === 'top' && msg.image) {
+    const imgEl = block.querySelector('.msg-image');
+    if (imgEl) imgEl.style.visibility = 'hidden';
+  }
 
   container.appendChild(block);
   scrollBottom();
@@ -153,7 +161,8 @@ function renderMessage(msg, idx) {
   const textEl = block.querySelector('.msg-text');
   const SPEED  = 28; // ms per character
 
-  typeWriter(textEl, fmt(msg.text), SPEED, () => {
+  function startTypeWriter() {
+    typeWriter(textEl, fmt(msg.text), SPEED, () => {
     scrollBottom();
     if (msg.qa) {
       const right  = block.querySelector('.msg-right');
@@ -173,6 +182,28 @@ function renderMessage(msg, idx) {
       setTimeout(() => showMessage(idx + 1), 500);
     }
   });
+  }
+
+  if (imgPos === 'top' && msg.image) {
+    const imgEl = block.querySelector('.msg-image');
+    if (imgEl) {
+      const showAndType = () => {
+        imgEl.style.visibility = 'visible';
+        scrollBottom();
+        startTypeWriter();
+      };
+      if (imgEl.complete && imgEl.naturalWidth > 0) {
+        showAndType();
+      } else {
+        imgEl.onload  = showAndType;
+        imgEl.onerror = () => { imgEl.style.visibility = 'visible'; startTypeWriter(); };
+      }
+    } else {
+      startTypeWriter();
+    }
+  } else {
+    startTypeWriter();
+  }
 }
 
 window.onQA = function(msgIdx, ansIdx, btn) {
@@ -196,7 +227,7 @@ function showWinnersAndGame() {
     const d = document.createElement('div');
     d.className = 'winner-item';
     d.style.fontSize = 'var(--fs-winner)';
-    d.innerHTML = `<strong>${w.name}</strong> — ${w.discount} chegirmani yutdi`;
+    d.innerHTML = w.discount ? `<strong>${w.name}</strong> — ${w.discount}` : `<strong>${w.name}</strong>`;
     list.appendChild(d);
   });
 
@@ -322,10 +353,11 @@ function renderBaraban(area, g) {
   canvas.width = 220;
   canvas.height = 220;
 
-  const labels = [
-    g.win_value || '100%', '75%', g.win_value || '100%',
-    '90%', g.win_value || '100%', '50%'
-  ];
+  function stripTags(t) {
+    return (t || '').replace(/<[^>]+>/g, '').replace(/\[\/?[a-z]+\]/gi, '');
+  }
+  const winLabel = stripTags(g.win_value || '100%');
+  const labels = [winLabel, '75%', winLabel, '90%', winLabel, '50%'];
   drawWheel(canvas, labels, 0);
 
   const btn = document.createElement('button');
@@ -605,5 +637,23 @@ function showSuccessModal() {
 function scrollBottom() {
   window.scrollTo({ top: document.body.scrollHeight, behavior: 'smooth' });
 }
+
+// Phone input mask
+document.addEventListener('DOMContentLoaded', () => {
+  const phone = document.getElementById('phoneInput');
+  if (!phone) return;
+  phone.addEventListener('input', (e) => {
+    let val = e.target.value.replace(/\D/g, '').slice(0, 9);
+    let out = '';
+    if (val.length > 0) out += val.slice(0, 2);
+    if (val.length > 2) out += ' ' + val.slice(2, 5);
+    if (val.length > 5) out += ' ' + val.slice(5, 7);
+    if (val.length > 7) out += ' ' + val.slice(7, 9);
+    e.target.value = out;
+  });
+  phone.addEventListener('keydown', (e) => {
+    if (e.key === 'Backspace') return;
+  });
+});
 
 init();

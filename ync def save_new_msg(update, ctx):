@@ -1,0 +1,20 @@
+[0;1;32m●[0m test400.service - Test400 Telegram Bot
+     Loaded: loaded (/etc/systemd/system/test400.service; enabled; vendor preset: enabled)
+     Active: [0;1;32mactive (running)[0m since Sun 2026-05-10 22:19:43 CST; 3s ago
+   Main PID: 116897 (python3)
+      Tasks: 3 (limit: 4105)
+     Memory: 43.4M
+        CPU: 434ms
+     CGroup: /system.slice/test400.service
+             └─116897 /usr/bin/python3 /opt/test400/bot.py
+
+May 10 22:19:43 iZt4n5r6jjvmriasj6xfudZ python3[116897]:  * Running on all addresses (0.0.0.0)
+May 10 22:19:43 iZt4n5r6jjvmriasj6xfudZ python3[116897]:  * Running on http://127.0.0.1:8080
+May 10 22:19:43 iZt4n5r6jjvmriasj6xfudZ python3[116897]:  * Running on http://172.29.217.74:8080
+May 10 22:19:43 iZt4n5r6jjvmriasj6xfudZ python3[116897]: 2026-05-10 22:19:43,862 INFO Press CTRL+C to quit
+May 10 22:19:43 iZt4n5r6jjvmriasj6xfudZ python3[116897]: /opt/test400/bot.py:682: PTBUserWarning: If 'per_message=False', 'CallbackQueryHandler' will not be tracked for every message. Read this FAQ entry to learn more about the per_* settings: https://github.com/python-telegram-bot/python-telegram-bot/wiki/Frequently-Asked-Questions#what-do-the-per_-settings-in-conversationhandler-do.
+May 10 22:19:43 iZt4n5r6jjvmriasj6xfudZ python3[116897]:   return ConversationHandler(
+May 10 22:19:43 iZt4n5r6jjvmriasj6xfudZ python3[116897]: 2026-05-10 22:19:43,934 INFO Bot started. Polling...
+May 10 22:19:44 iZt4n5r6jjvmriasj6xfudZ python3[116897]: 2026-05-10 22:19:44,424 INFO HTTP Request: POST https://api.telegram.org/bot8723789656:AAHz8HTnnK_ROSzdG4iN-VFOIsoIkqrmt_A/getMe "HTTP/1.1 200 OK"
+May 10 22:19:44 iZt4n5r6jjvmriasj6xfudZ python3[116897]: 2026-05-10 22:19:44,592 INFO HTTP Request: POST https://api.telegram.org/bot8723789656:AAHz8HTnnK_ROSzdG4iN-VFOIsoIkqrmt_A/deleteWebhook "HTTP/1.1 200 OK"
+May 10 22:19:44 iZt4n5r6jjvmriasj6xfudZ python3[116897]: 2026-05-10 22:19:44,595 INFO Application started

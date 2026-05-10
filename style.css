@@ -120,7 +120,21 @@ body {
 }
 .qa-btn:active { transform: scale(.97); background: var(--btn-green-dark); }
 .qa-btn:disabled { opacity: .55; cursor: default; }
-.qa-btn.selected { background: var(--btn-green-dark); }
+.qa-btn.selected {
+  background: var(--btn-green-dark);
+  box-shadow: 0 0 0 3px #fff, 0 0 0 5px var(--btn-green-dark);
+  font-weight: 700;
+  position: relative;
+}
+.qa-btn.selected::after {
+  content: '✓';
+  position: absolute;
+  right: 18px;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 18px;
+  color: #fff;
+}
 
 /* Typing */
 .typing-row {

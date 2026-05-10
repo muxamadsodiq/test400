@@ -1,57 +1,18 @@
-2026-05-10 18:04:32,540 INFO Flask server started on http://0.0.0.0:8080
+nohup: ignoring input
+2026-05-10 22:32:53,912 INFO Flask server started on http://0.0.0.0:8024
  * Serving Flask app 'bot'
  * Debug mode: off
-2026-05-10 18:04:32,552 INFO [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+2026-05-10 22:32:53,919 INFO [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
  * Running on all addresses (0.0.0.0)
- * Running on http://127.0.0.1:8080
- * Running on http://192.168.0.105:8080
-2026-05-10 18:04:32,552 INFO [33mPress CTRL+C to quit[0m
-/Users/muhammadsodiq/Downloads/keraksiz/test400/bot.py:679: PTBUserWarning: If 'per_message=False', 'CallbackQueryHandler' will not be tracked for every message. Read this FAQ entry to learn more about the per_* settings: https://github.com/python-telegram-bot/python-telegram-bot/wiki/Frequently-Asked-Questions#what-do-the-per_-settings-in-conversationhandler-do.
+ * Running on http://127.0.0.1:8024
+ * Running on http://172.29.217.74:8024
+2026-05-10 22:32:53,919 INFO [33mPress CTRL+C to quit[0m
+/opt/test400/bot.py:700: PTBUserWarning: If 'per_message=False', 'CallbackQueryHandler' will not be tracked for every message. Read this FAQ entry to learn more about the per_* settings: https://github.com/python-telegram-bot/python-telegram-bot/wiki/Frequently-Asked-Questions#what-do-the-per_-settings-in-conversationhandler-do.
   return ConversationHandler(
-2026-05-10 18:04:32,580 INFO Bot started. Polling...
-2026-05-10 18:04:32,886 INFO HTTP Request: POST https://api.telegram.org/bot8723789656:AAHXO5DOB1R3PmcMs5FGp8hfEqT9UTaHdCM/getMe "HTTP/1.1 200 OK"
-2026-05-10 18:04:32,987 INFO HTTP Request: POST https://api.telegram.org/bot8723789656:AAHXO5DOB1R3PmcMs5FGp8hfEqT9UTaHdCM/deleteWebhook "HTTP/1.1 200 OK"
-2026-05-10 18:04:32,990 INFO Application started
-2026-05-10 18:04:43,297 INFO HTTP Request: POST https://api.telegram.org/bot8723789656:AAHXO5DOB1R3PmcMs5FGp8hfEqT9UTaHdCM/getUpdates "HTTP/1.1 200 OK"
-2026-05-10 18:04:48,308 INFO 127.0.0.1 - - [10/May/2026 18:04:48] "GET / HTTP/1.1" 200 -
-2026-05-10 18:04:48,883 INFO 127.0.0.1 - - [10/May/2026 18:04:48] "GET /style.css HTTP/1.1" 200 -
-2026-05-10 18:04:48,888 INFO 127.0.0.1 - - [10/May/2026 18:04:48] "GET /script.js HTTP/1.1" 200 -
-2026-05-10 18:04:48,912 INFO 127.0.0.1 - - [10/May/2026 18:04:48] "GET /api/content HTTP/1.1" 200 -
-2026-05-10 18:04:48,927 INFO 127.0.0.1 - - [10/May/2026 18:04:48] "[36mGET /uploads/avatar.jpg HTTP/1.1[0m" 304 -
-2026-05-10 18:04:50,938 INFO 127.0.0.1 - - [10/May/2026 18:04:50] "[36mGET /uploads/avatar.jpg HTTP/1.1[0m" 304 -
-2026-05-10 18:04:53,412 INFO HTTP Request: POST https://api.telegram.org/bot8723789656:AAHXO5DOB1R3PmcMs5FGp8hfEqT9UTaHdCM/getUpdates "HTTP/1.1 200 OK"
-2026-05-10 18:04:59,473 INFO 127.0.0.1 - - [10/May/2026 18:04:59] "[36mGET /uploads/avatar.jpg HTTP/1.1[0m" 304 -
-2026-05-10 18:05:03,615 INFO HTTP Request: POST https://api.telegram.org/bot8723789656:AAHXO5DOB1R3PmcMs5FGp8hfEqT9UTaHdCM/getUpdates "HTTP/1.1 200 OK"
-2026-05-10 18:05:04,825 INFO 127.0.0.1 - - [10/May/2026 18:05:04] "[36mGET /uploads/avatar.jpg HTTP/1.1[0m" 304 -
-2026-05-10 18:05:13,725 INFO HTTP Request: POST https://api.telegram.org/bot8723789656:AAHXO5DOB1R3PmcMs5FGp8hfEqT9UTaHdCM/getUpdates "HTTP/1.1 200 OK"
-2026-05-10 18:05:14,267 INFO 127.0.0.1 - - [10/May/2026 18:05:14] "[36mGET /uploads/avatar.jpg HTTP/1.1[0m" 304 -
-2026-05-10 18:05:19,507 INFO 127.0.0.1 - - [10/May/2026 18:05:19] "GET /uploads/img_A3gAAzsE.jpg HTTP/1.1" 200 -
-2026-05-10 18:05:19,508 INFO 127.0.0.1 - - [10/May/2026 18:05:19] "[36mGET /uploads/avatar.jpg HTTP/1.1[0m" 304 -
-2026-05-10 18:05:24,039 INFO HTTP Request: POST https://api.telegram.org/bot8723789656:AAHXO5DOB1R3PmcMs5FGp8hfEqT9UTaHdCM/getUpdates "HTTP/1.1 200 OK"
-2026-05-10 18:05:34,239 INFO HTTP Request: POST https://api.telegram.org/bot8723789656:AAHXO5DOB1R3PmcMs5FGp8hfEqT9UTaHdCM/getUpdates "HTTP/1.1 200 OK"
-2026-05-10 18:05:34,377 INFO 127.0.0.1 - - [10/May/2026 18:05:34] "GET / HTTP/1.1" 200 -
-2026-05-10 18:05:34,418 INFO 127.0.0.1 - - [10/May/2026 18:05:34] "[33mGET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1[0m" 404 -
-2026-05-10 18:05:34,423 INFO 127.0.0.1 - - [10/May/2026 18:05:34] "GET /style.css HTTP/1.1" 200 -
-2026-05-10 18:05:34,423 INFO 127.0.0.1 - - [10/May/2026 18:05:34] "GET /script.js HTTP/1.1" 200 -
-2026-05-10 18:05:34,440 INFO 127.0.0.1 - - [10/May/2026 18:05:34] "GET /api/content HTTP/1.1" 200 -
-2026-05-10 18:05:34,452 INFO 127.0.0.1 - - [10/May/2026 18:05:34] "GET /uploads/avatar.jpg HTTP/1.1" 200 -
-2026-05-10 18:05:36,456 INFO 127.0.0.1 - - [10/May/2026 18:05:36] "GET /uploads/avatar.jpg HTTP/1.1" 200 -
-2026-05-10 18:05:42,618 INFO 127.0.0.1 - - [10/May/2026 18:05:42] "GET /uploads/avatar.jpg HTTP/1.1" 200 -
-2026-05-10 18:05:44,455 INFO HTTP Request: POST https://api.telegram.org/bot8723789656:AAHXO5DOB1R3PmcMs5FGp8hfEqT9UTaHdCM/getUpdates "HTTP/1.1 200 OK"
-2026-05-10 18:05:45,118 INFO 127.0.0.1 - - [10/May/2026 18:05:45] "GET /uploads/avatar.jpg HTTP/1.1" 200 -
-2026-05-10 18:05:48,533 INFO 127.0.0.1 - - [10/May/2026 18:05:48] "GET /uploads/avatar.jpg HTTP/1.1" 200 -
-2026-05-10 18:05:50,528 INFO 127.0.0.1 - - [10/May/2026 18:05:50] "GET /uploads/avatar.jpg HTTP/1.1" 200 -
-2026-05-10 18:05:54,674 INFO HTTP Request: POST https://api.telegram.org/bot8723789656:AAHXO5DOB1R3PmcMs5FGp8hfEqT9UTaHdCM/getUpdates "HTTP/1.1 200 OK"
-2026-05-10 18:05:54,953 INFO 127.0.0.1 - - [10/May/2026 18:05:54] "GET /uploads/avatar.jpg HTTP/1.1" 200 -
-2026-05-10 18:05:56,757 INFO 127.0.0.1 - - [10/May/2026 18:05:56] "GET /uploads/avatar.jpg HTTP/1.1" 200 -
-2026-05-10 18:05:59,871 INFO 127.0.0.1 - - [10/May/2026 18:05:59] "GET /uploads/avatar.jpg HTTP/1.1" 200 -
-2026-05-10 18:06:01,869 INFO 127.0.0.1 - - [10/May/2026 18:06:01] "GET /uploads/avatar.jpg HTTP/1.1" 200 -
-2026-05-10 18:06:01,870 INFO 127.0.0.1 - - [10/May/2026 18:06:01] "GET /uploads/img_A3gAAzsE.jpg HTTP/1.1" 200 -
-2026-05-10 18:06:04,848 INFO HTTP Request: POST https://api.telegram.org/bot8723789656:AAHXO5DOB1R3PmcMs5FGp8hfEqT9UTaHdCM/getUpdates "HTTP/1.1 200 OK"
-2026-05-10 18:06:15,022 INFO HTTP Request: POST https://api.telegram.org/bot8723789656:AAHXO5DOB1R3PmcMs5FGp8hfEqT9UTaHdCM/getUpdates "HTTP/1.1 200 OK"
-2026-05-10 18:06:22,668 INFO 127.0.0.1 - - [10/May/2026 18:06:22] "POST /api/submit HTTP/1.1" 200 -
-2026-05-10 18:06:25,255 INFO HTTP Request: POST https://api.telegram.org/bot8723789656:AAHXO5DOB1R3PmcMs5FGp8hfEqT9UTaHdCM/getUpdates "HTTP/1.1 200 OK"
-2026-05-10 18:06:35,362 INFO HTTP Request: POST https://api.telegram.org/bot8723789656:AAHXO5DOB1R3PmcMs5FGp8hfEqT9UTaHdCM/getUpdates "HTTP/1.1 200 OK"
-2026-05-10 18:06:45,474 INFO HTTP Request: POST https://api.telegram.org/bot8723789656:AAHXO5DOB1R3PmcMs5FGp8hfEqT9UTaHdCM/getUpdates "HTTP/1.1 200 OK"
-2026-05-10 18:06:55,588 INFO HTTP Request: POST https://api.telegram.org/bot8723789656:AAHXO5DOB1R3PmcMs5FGp8hfEqT9UTaHdCM/getUpdates "HTTP/1.1 200 OK"
-2026-05-10 18:07:05,776 INFO HTTP Request: POST https://api.telegram.org/bot8723789656:AAHXO5DOB1R3PmcMs5FGp8hfEqT9UTaHdCM/getUpdates "HTTP/1.1 200 OK"
+2026-05-10 22:32:53,994 INFO Bot started. Polling...
+2026-05-10 22:32:54,480 INFO HTTP Request: POST https://api.telegram.org/bot8723789656:AAHz8HTnnK_ROSzdG4iN-VFOIsoIkqrmt_A/getMe "HTTP/1.1 200 OK"
+2026-05-10 22:32:54,646 INFO HTTP Request: POST https://api.telegram.org/bot8723789656:AAHz8HTnnK_ROSzdG4iN-VFOIsoIkqrmt_A/deleteWebhook "HTTP/1.1 200 OK"
+2026-05-10 22:32:54,647 INFO Application started
+2026-05-10 22:33:05,142 INFO HTTP Request: POST https://api.telegram.org/bot8723789656:AAHz8HTnnK_ROSzdG4iN-VFOIsoIkqrmt_A/getUpdates "HTTP/1.1 200 OK"
+2026-05-10 22:33:15,304 INFO HTTP Request: POST https://api.telegram.org/bot8723789656:AAHz8HTnnK_ROSzdG4iN-VFOIsoIkqrmt_A/getUpdates "HTTP/1.1 200 OK"
+2026-05-10 22:33:25,468 INFO HTTP Request: POST https://api.telegram.org/bot8723789656:AAHz8HTnnK_ROSzdG4iN-VFOIsoIkqrmt_A/getUpdates "HTTP/1.1 200 OK"

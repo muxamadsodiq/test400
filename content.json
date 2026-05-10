@@ -1,91 +1,134 @@
 {
   "messages": [
     {
-      "id": 1,
-      "text": "Javoblaringiz uchun **rahmat**. Vaziуyatingizni táhlil qildim.\nSizdagi belgilar prostatit va undan kelib chiqadigan erektil disfunksiyaning yáqqol kórinishidir. Eng havflisi – vaqtni boy berish.",
-      "timestamp": "23:52",
-      "delay": 2000,
-      "image": null,
-      "qa": null
-    },
-    {
-      "id": 2,
-      "text": "Prostatit 100% holatda tóliq impotensiyaga olib kelishi mumkin. Lekin hozir davolanish imkoni bor.",
-      "timestamp": "23:52",
-      "delay": 2500,
-      "image": null,
-      "qa": null
-    },
-    {
-      "id": 3,
-      "text": "Savol 1: Sizda peshob qilishda muammolar (tez-tez qatnaš) yoki qovuq sohasida oǵriq bormi?",
-      "timestamp": "23:52",
-      "delay": 2000,
-      "image": null,
-      "qa": {
-        "answers": [
-          "Ha",
-          "Yo’q",
-          "Ba’zan"
-        ]
-      }
-    },
-    {
-      "id": 4,
-      "text": "Savol 2: Jinsiy aloqa davrida qiyinchiliklar sezasizmi?",
-      "timestamp": "23:53",
-      "delay": 1800,
-      "image": null,
-      "qa": {
-        "answers": [
-          "Ha",
-          "Yo’q",
-          "Ba’zan"
-        ]
-      }
-    },
-    {
-      "text": "salom qalin [qizil] qizil matn [/qizil]\n[yaxshil] qizil matn [/yashil]",
+      "text": "Эркаклик қувватини   17 йилга ошириш\nОдилжон Садиров-Олий тоифалий mutaxassis тиббийот фанлари доктори.\nСалом сахифамга хуш келибсиз. Сиз бу ерга  иккита асосий сабаб билан келдингиз: простатадаги ноқулайлик ва заифлашган эркаклик қуввати ( Юмшоқ олат, тез бушаниш) Мен бу ерда бепул диагностика Утказаман ва эркакларга тошдек қаттиқ эррексияни қайтариш хамда простатитдан уй шароитида қутулишга йордам бераман.  Аниқ тавсия беришим учун илтимос 4 та қисқа саволга жавоб беринг.",
       "timestamp": "",
-      "delay": 2000,
-      "image": "/uploads/img_A3gAAzsE.jpg",
+      "delay": 1000,
+      "images_before": [
+        "/uploads/img_DeQADOwQ.jpg"
+      ],
+      "images_after": [],
+      "image": null,
+      "qa": null,
+      "id": 1,
+      "image_position": null
+    },
+    {
+      "text": "1-савол: Сизда пешоб қилишда муаммолар (тез-тез қатнаш)  ёки қувуқ сохасида огриқ борми",
+      "timestamp": "",
+      "delay": 1000,
+      "images_before": [],
+      "images_after": [],
+      "image": null,
       "qa": {
         "answers": [
-          "salom"
+          "ХА",
+          "Йуқ",
+          "Базан"
+        ]
+      },
+      "id": 2
+    },
+    {
+      "text": "2- савол: Сизда қуйидаги муаммолардан бирортаси борми  Заиф патенсия, Жинсий алоқанинг тез тугаши, юмшоқ пенис?",
+      "timestamp": "",
+      "delay": 1000,
+      "images_before": [],
+      "images_after": [],
+      "image": null,
+      "qa": {
+        "answers": [
+          "ха",
+          "йуқ"
+        ]
+      },
+      "id": 3
+    },
+    {
+      "text": "3-савол: Потенсияни ошириш учун дорихона стимуляторлари (виагра ва бошкалар) синаб курганмисиз.?",
+      "timestamp": "",
+      "delay": 1000,
+      "images_before": [],
+      "images_after": [],
+      "image": null,
+      "qa": {
+        "answers": [
+          "ха",
+          "йуқ"
+        ]
+      },
+      "id": 4
+    },
+    {
+      "text": "4-савол: Сизнинг йошингиз",
+      "timestamp": "",
+      "delay": 1000,
+      "image": null,
+      "qa": {
+        "answers": [
+          "30 йошгача",
+          "31-45",
+          "46-60",
+          "60+"
         ]
       },
       "id": 5
+    },
+    {
+      "text": "Жавобларингиз учун рахмат вазиятингизни тахлил қилдим. Сиздаги белгилар простатит ва ундан келиб чиқадиган эректил дисфунксиясининг яққол куринишидир. Энг [qizil] хавфлиси [/qizil] вақтни бой бериш.\nпростатит коп холатларда тулиқ [qizil] жинсий заифликга [/qizil] олиб келади. потенсия ва тез бушаниш-бу фақат бошланиши.",
+      "timestamp": "",
+      "delay": 1000,
+      "image": null,
+      "qa": null,
+      "id": 6
+    },
+    {
+      "text": "Даволанмаса, у [qizil] простата аденомаси ва саратонига айланиши мумкин[/qizil]. купчилик эркакалар вақтинчалик виагралар ичиб муаммони яширишга уринади. лекин улар [qizil] юракни ишдан чиқаради [/qizil].ва жинсий азони умуман [qizil] ишламайдиган килиб қуяди[/qizil].. Бизга касалликни таг туги билан йуқ қиладиган [yashil] ечим керак[/yashil] .  Бугунги кунда простата фаолиятини ва кучли потенсияни қайтаришнинг ягона хавфсиз усули _ бу ,,ВИТРОНИК\" воситасидир. \nУнинг икки томонлама тасири бор: биринчидан, у простатадаги яллигланиш  ва шишни тулиқ йуқотади, пешоб қилишни нормаллаштиради .\nИккинчидан тос азоларида кон айланишини портлатиб, йошликдагидек қаттик ва баркарор эрекцияни таминлайди. \nуни куллагандан сунг тунги безовталиклар йуқолади,  Жинсий алоқа узоқ давом этади ва сиз эрта бушаниш нима эканлигини унутасиз. Сизнинг айолингиз бундан хайратда колади.",
+      "timestamp": "",
+      "delay": 1000,
+      "image": null,
+      "image_position": null,
+      "qa": null,
+      "id": 9
+    },
+    {
+      "text": "Сиз онлине диагностикадан утдингиз  ва менинг мижозим булдингиз. Айнан бугун ,,ВИТРОНИК\" ишлб чиқурувчисининг аксияси доирасида сизда ушбу курсни бепул йоки катта чегирмада олиш имконяти бор қуйидаги барабанни айлантиринг ва ўз  чегирмангизни ютиб олинг. Сунг исмингиз ва телефон рақамингшизни колдиринг.\n\nДИҚҚАТ: буюртма қолдирганингиздан сунг йордамчим 15 дакика ичида қунгирок килади. Қунгироққа жавоб беринг, акс холда квотангиз бекор қилинади. Барча малумотлар 100% махфий сақланади.",
+      "timestamp": "",
+      "delay": 1000,
+      "image": "/uploads/img_A3kAAzsE.jpg",
+      "qa": null,
+      "id": 10
     }
   ],
   "winners": [
     {
-      "name": "Saidbek X.",
-      "discount": "75%"
+      "name": "Алиев Саидбек- 75% чегирмани ютди",
+      "discount": ""
     },
     {
-      "name": "Umid J.",
-      "discount": "90%"
+      "name": "Туропов Кадамбой- 100% чегирма ютди",
+      "discount": ""
     },
     {
-      "name": "Zurab F.",
-      "discount": "100%"
+      "name": "Дадабоев Шавкат- 90% чегирма ютди",
+      "discount": ""
     },
     {
-      "name": "Akukan M.",
-      "discount": "90%"
+      "name": "Холдаров Толибжон-    20% чегирма ютди",
+      "discount": ""
     }
   ],
-  "winners_header": "ULAR ALLAQACHON CHEGIRMANI YUTDI, SIZ HAM YUTUSHINGIZ MUMKIN!",
+  "winners_header": "BARABANNI AYLANTIRING VA YUTUQNI QO'LGA KIRITING!",
   "avatar_url": "/uploads/avatar.jpg",
   "game": {
     "type": "baraban",
-    "title": "QAYSI MATRYÖŞKADA\nBEPUL BORLIGINI TOPING",
+    "title": "Tabriklaymiz!",
     "items": 3,
     "win_index": 1,
-    "win_value": "100%",
+    "win_value": "20",
     "win_sound_url": "",
     "win_popup_title": "Tabriklaymiz!",
-    "win_popup_text": "Siz chegirma yutib oldingiz [qizil]**100%**[/qizil]\nVa siz dori olishingiz mumkin [qizil]**Bepul!**[/qizil]"
+    "win_popup_text": "Ismingiz va nomeringizni qoldiring!"
   },
   "result": {
     "image": "",
@@ -99,7 +142,7 @@
     "countdown_show": true,
     "name_placeholder": "Sizning ismingiz",
     "phone_prefix": "+998",
-    "button_text": "uni olish",
+    "button_text": "Yuborish",
     "group_id": ""
   },
   "success_modal": {
@@ -108,9 +151,9 @@
     "detail": "**15 daqiqada** mutaxasislar aloqaga chiqadi.\nShu vaqt ichida javob bering,\nbo'lmasam [qizil]aksiyangiz kuyadi![/qizil]",
     "countdown_minutes": 15
   },
-  "submission_count": 4,
+  "submission_count": 7,
   "font_sizes": {
-    "message_text": 16,
+    "message_text": 28,
     "timestamp": 11,
     "winner_text": 14,
     "winners_header": 18,
